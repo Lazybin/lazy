@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LAZY登陆</title>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="<?php echo base_url(); ?>bootstrap/js/bootstrap.min.js"></script>
+    <style rel="stylesheet" type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #eee;
+        }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+        .form-signin .buttons{
+            text-align: center;
+        }
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <form class="form-signin">
+                <h2 class="form-signin-heading">欢迎来到LAZY</h2>
+                <label class="sr-only" for="inputEmail">电子邮箱</label>
+                <input type="email" autofocus="" required="" placeholder="电子邮箱" class="form-control" id="inputEmail">
+                <label class="sr-only" for="inputPassword">密码</label>
+                <input type="password" required="" placeholder="密码" class="form-control" id="inputPassword">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="remember-me">记住我
+                    </label>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="btn btn-primary ">&nbsp;&nbsp;登陆&nbsp;&nbsp;</button>
+                    <button type="submit" class="btn btn-default ">&nbsp;&nbsp;注册&nbsp;&nbsp;</button>
+                <div>
+            </form>
+        </div>
+    </body>
+</html>

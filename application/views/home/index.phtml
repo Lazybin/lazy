@@ -50,18 +50,45 @@
             color: inherit;
             text-decoration: inherit;
         }
-        .list-inline li{
+        .base_info_list{
+            list-style: outside none none;
+            padding: 0;
+        }
+        .base_info_list li{
             border-right: 1px solid #d4dbe0;display: inline-block;  
         }
-        .list-inline li:last-child {
+        .base_info_list li:last-child {
             border-right: 0 none;
         }
-        .list-inline li a{
+        .base_info_list li a{
             color: inherit;text-decoration: inherit;
         }
-        .list-inline li a h5{
+        .base_info_list li a h5{
             margin-bottom: 0 !important;margin-top: 0 !important;font-weight: bold;
         }
+        .weibo_list{
+            margin-bottom: 20px;
+        }
+        .weibo_list li{
+            padding: 20px !important;
+            background-color: #ffffff;
+            border: 1px solid #d3e0e9;
+            display: block;
+            margin-bottom: -1px;
+            padding: 10px 15px;
+            position: relative;
+        }
+        .weibo_list li:first-child {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .weibo_list li:last-child {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            margin-bottom: 0;
+        }
+
+
     </style>
 </head>
 <body>
@@ -120,7 +147,7 @@
                     <div class="lz_panel_content">
                         <img width="100" class="head_icon" height="100" alt="Generic placeholder image" src="<? echo base_url();?>images/default_head.png" class="img-circle">
                         <h5 style="margin-bottom: 30px !important;"><a href="#" class="title_a">你闻到他们烧焦的闻到了吗</a></h5>
-                        <ul class="list-inline">
+                        <ul class="list-inline base_info_list">
                             <li>
                                 <a href="#">2233
                                     <h5>粉丝</h5>
@@ -136,8 +163,25 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6"  style="background-color:blue;">
-                xxxxx
+            <div class="col-lg-6">
+                <ul class="list-unstyled weibo_list">
+                  <li>
+                    <form>
+                        <div class="form-group">
+                        <textarea rows="3" style="resize: none;" class="form-control"></textarea>
+                        </div>
+                        <div style="margin-left:20px;margin-right:20px;">
+                            <button class="btn btn-info btn-sm" type="button">
+                                <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                                图片
+                            </button>
+                            <a style="float:right;margin-top:-3px;" type="submit" class="btn btn-primary">&nbsp;&nbsp;发布&nbsp;&nbsp;</a>
+                        </div>
+
+                    </form>
+                  </li>
+                  <li>...</li>
+                </ul>
             </div>
             <div class="col-lg-3" style="background-color:green">
                 ttttt
